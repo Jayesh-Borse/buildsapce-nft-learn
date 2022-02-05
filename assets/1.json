@@ -1,0 +1,19 @@
+{
+    "name": "Naruto#0002",
+    "symbol": "*",
+    "image": "1.jpg",
+    "properties": {
+      "files": [
+        {
+          "uri": "1.jpg",
+          "type": "image/jpg"
+        }
+      ],
+      "creators": [
+        {
+          "address": "HhG1Xiot6VWE67Er2yrS9MAghwcQHLB2MB1LQC7ysLQm",
+          "share": 100
+        }
+      ]
+    }
+  }

@@ -58,14 +58,14 @@ const CandyMachine = ({ walletAddress }) => {
     )[0];
   };
 
-  const getTokenWallet = async (wallet, mint) => {
-    return (
-      await web3.PublicKey.findProgramAddress(
-        [wallet.toBuffer(), TOKEN_PROGRAM_ID.toBuffer(), mint.toBuffer()],
-        SPL_ASSOCIATED_TOKEN_ACCOUNT_PROGRAM_ID
-      )
-    )[0];
-  };
+  // const getTokenWallet = async (wallet, mint) => {
+  //   return (
+  //     await web3.PublicKey.findProgramAddress(
+  //       [wallet.toBuffer(), TOKEN_PROGRAM_ID.toBuffer(), mint.toBuffer()],
+  //       SPL_ASSOCIATED_TOKEN_ACCOUNT_PROGRAM_ID
+  //     )
+  //   )[0];
+  // };
 
   // const mintToken = async () => {
   //   try {
@@ -424,7 +424,7 @@ const CandyMachine = ({ walletAddress }) => {
 
   useEffect(() => {
     getCandyMachineState();
-  }, []);
+  },);
 
   const getProvider = () => {
     const rpcHost = process.env.REACT_APP_SOLANA_RPC_HOST;
